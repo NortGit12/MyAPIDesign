@@ -15,14 +15,6 @@ class SurveyViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var responseTextField: UITextField!
     
-    // MARK: - General
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-    }
-    
     // MARK: - Action(s)
     
     @IBAction func submitButtonTapped(sender: UIButton) {
