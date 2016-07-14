@@ -15,6 +15,7 @@
 		1F4445741D37F80600A31382 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4445731D37F80600A31382 /* Survey.swift */; };
 		1F4445771D37F9FD00A31382 /* SurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4445761D37F9FD00A31382 /* SurveyController.swift */; };
 		1F4445791D3804C700A31382 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4445781D3804C700A31382 /* SurveyViewController.swift */; };
+		1F44457C1D380D6B00A31382 /* ResponsesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F44457B1D380D6B00A31382 /* ResponsesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1F4445731D37F80600A31382 /* Survey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		1F4445761D37F9FD00A31382 /* SurveyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyController.swift; sourceTree = "<group>"; };
 		1F4445781D3804C700A31382 /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		1F44457B1D380D6B00A31382 /* ResponsesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				1F4445781D3804C700A31382 /* SurveyViewController.swift */,
+				1F44457B1D380D6B00A31382 /* ResponsesTableViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				1F4445741D37F80600A31382 /* Survey.swift in Sources */,
 				1F4445711D37F62300A31382 /* NetworkController.swift in Sources */,
+				1F44457C1D380D6B00A31382 /* ResponsesTableViewController.swift in Sources */,
 				1F44455F1D37F40700A31382 /* AppDelegate.swift in Sources */,
 				1F4445771D37F9FD00A31382 /* SurveyController.swift in Sources */,
 				1F4445791D3804C700A31382 /* SurveyViewController.swift in Sources */,
