@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class SurveyController {
+    
+    // MARK: - Stored Properties
+    
+    static let baseURL = NSURL(string: "https://jeffnortonapidesign.firebaseio.com/api/v1/")
+    
+    static let getterEndpoint = baseURL?.URLByAppendingPathExtension("json")
+    
+    // MARK: - Initializer(s)
+    
+}
