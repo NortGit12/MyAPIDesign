@@ -21,7 +21,9 @@ class SurveyController {
     var surveys: [Survey] {
         
         didSet{
+            
             self.delegate?.surveysUpdated(surveys)
+            
         }
         
     }
@@ -75,7 +77,21 @@ class SurveyController {
         
         NetworkController.performRequestForURL(unwrappedURL, httpMethod: .Get) { (data, error) in
             
-//            let responseDataString = NSString(data: data!, encoding: NSUTF8StringEncoding) ?? ""
+            let responseDataString = NSString(data: data!, encoding: NSUTF8StringEncoding) ?? ""
+            
+            if error != nil {
+                
+                print("Error (in instance): \(error?.localizedDescription)")
+                completion(surveys: [])
+                return
+                
+            } else if responseDataString.containsString("error") {
+                
+                print("Error (in message): \(responseDataString)")
+                completion(surveys: [])
+                return
+                
+            }
             
             guard let data = data
             , jsonDictionary = (try? NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)) as? [String : [String : AnyObject]]
@@ -91,8 +107,6 @@ class SurveyController {
                 let surveysArray = jsonDictionary.flatMap{ Survey(dictionary: $0.1, identifier: $0.0) }
                 
                 completion(surveys: surveysArray)
-                
-//                _ = surveysArray.map{ print($0.response) }
                 
             })
             
