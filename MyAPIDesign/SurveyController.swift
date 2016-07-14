@@ -21,7 +21,7 @@ class SurveyController {
     var surveys: [Survey] {
         
         didSet{
-            delegate.surveysUpdated(self)
+            self.delegate?.surveysUpdated(surveys)
         }
         
     }
@@ -38,7 +38,7 @@ class SurveyController {
     
     // MARK: - Methods
     
-    func putSurveyIntoAPI(name: String, response: String) {
+    static func putSurveyIntoAPI(name: String, response: String) {
         
         let survey = Survey(name: name, response: response)
         
